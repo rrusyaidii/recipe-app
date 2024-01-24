@@ -1,47 +1,136 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
-  }
-  
-  h1, h2 {
+}
+
+.header {
+    background-color: #4562b8;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    padding: .3rem;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 3rem;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    margin-top: 3px;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+nav img {
+    width: 80px;
+}
+
+h1, h3 {
     text-align: center;
-  }
-  
-  #recipeList {
+}
+
+#recipeList {
     max-width: 600px;
     margin: 0 auto;
-  }
-  
-  .recipe {
+}
+
+.recipe {
     border: 1px solid #ccc;
     margin-bottom: 10px;
     padding: 10px;
-  }
-  
-  #recipeForm {
+    border-radius: .3rem;
+}
+
+#recipeForm {
     max-width: 600px;
     margin: 20px auto;
-  }
-  
-  label {
+}
+
+
+.recipe-item {
+    padding: 1rem;
+}
+
+
+
+label {
     display: block;
     margin-bottom: 5px;
-  }
-  
-  input, textarea {
+}
+
+input, textarea {
     width: 100%;
     margin-bottom: 10px;
-  }
-  
-  button {
-    background-color: #4CAF50;
+}
+
+button {
     color: white;
     padding: 10px;
     border: none;
     cursor: pointer;
-  }
-  
-  button:hover {
+    border-radius: .3rem;
+}
+
+.btn {
+    background-color: #4562b8;
+}
+
+.btn:hover {
+    background-color: #1a2e5b;
+}
+
+.btn-edit {
     background-color: #45a049;
-  }
-  
+    color: white;
+    /* width: 60px;
+    margin: 10px 0 10px 0;  */
+}
+
+.btn-edit:hover {
+    background-color: #1b5e20;
+}
+
+.btn-delete {
+    background-color: #f44336;
+    color: white;
+    /* width: 60px;
+    margin:  0px 0 0 0;  */
+}
+
+.btn-delete:hover {
+    background-color: #ba0d0d;
+}
